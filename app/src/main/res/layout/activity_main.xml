@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+    <TextView
+            android:text="Enter the first number :-"
+            android:layout_width="204dp"
+            android:layout_height="31dp" android:id="@+id/textView2"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="60dp" android:textSize="18sp"
+            app:layout_constraintHorizontal_bias="0.507"/>
+    <TextView
+            android:text="Enter the second number :-"
+            android:layout_width="229dp"
+            android:layout_height="39dp" android:id="@+id/textView3"
+            android:textSize="18sp" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toBottomOf="@+id/firstNumber"
+            android:layout_marginTop="40dp" app:layout_constraintHorizontal_bias="0.576"/>
+    <EditText
+            android:layout_width="228dp"
+            android:layout_height="48dp"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/firstNumber"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" android:layout_marginTop="28dp"
+            app:layout_constraintHorizontal_bias="0.579"/>
+    <EditText
+            android:layout_width="245dp"
+            android:layout_height="46dp"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/secondNumber"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" android:layout_marginTop="32dp"
+            app:layout_constraintHorizontal_bias="0.638"/>
+    <Button
+            android:text="Sum = "
+            android:layout_width="84dp"
+            android:layout_height="38dp" android:id="@+id/sumbutton"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.321" app:layout_constraintTop_toBottomOf="@+id/secondNumber"
+            android:layout_marginTop="36dp" android:onClick="sum"/>
+    <TextView
+            android:layout_width="139dp"
+            android:layout_height="38dp" android:id="@+id/ans"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.742" app:layout_constraintTop_toBottomOf="@+id/secondNumber"
+            android:layout_marginTop="36dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
